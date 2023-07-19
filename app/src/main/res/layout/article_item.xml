@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center"
+
+    android:paddingBottom="1dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="1dp"
+    android:paddingEnd="5dp"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="1dp"
+
+    >
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="121dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp">
+            >
+
+            <ImageView
+
+                android:id="@+id/listImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:paddingTop="2dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:breakStrategy="simple"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLines="2"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:textColor="@color/black"
+                android:textSize="11dp"
+                tools:ignore="TextViewEdits"
+                tools:text="Nombre del artículo" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:inputType="text"
+                android:maxLines="2"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:textColor="@color/black"
+                tools:ignore="TextViewEdits"
+                tools:text="precio" />
+
+
+            <TextView
+                android:id="@+id/idMostrar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fontFamily="sans-serif-black"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+                android:textColor="@color/black"
+                android:visibility="invisible"
+                tools:text="id" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
